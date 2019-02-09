@@ -1,0 +1,48 @@
+
+@import 'partials/prefix-mixins';
+@import 'partials/layout'; // responsive grid and media queries
+
+// color palette - these colors will be the color swatches of the Colors section
+
+$color-1: #fff379; // Yellow for post-it notes
+$color-2: #302023; // Dark Brown for Typography
+$color-3: #ffffff; // White for paper
+$color-4: #f81415; // Red for pins and accents
+$color-5: #230306; // Darker Brown for Shadows
+
+// additional colors
+
+
+// fonts
+@import url('https://fonts.googleapis.com/css?family=Sarabun');
+@import url('https://fonts.googleapis.com/css?family=Reenie+Beanie');
+@import url('https://fonts.googleapis.com/css?family=Sigmar+One');
+
+$primary-font: 'Sarabun', sans-serif;
+$secondary-font: 'Sigmar One', cursive;
+$thirdy-font: 'Reenie Beanie', cursive;
+
+@import 'partials/background';
+
+
+@import 'partials/patterns';
+
+
+
+@import 'partials/navigation';
+
+
+
+@import 'partials/pagetittle';
+
+
+
+@import 'partials/typography';
+
+
+
+@import 'partials/buttons';
+
+
+
+@import 'partials/basic-style';
