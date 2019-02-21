@@ -1,0 +1,9 @@
+{
+    "markdown.preview.doubleClickToSwitchToEditor": false,
+    "markdown.preview.markEditorSelection": false,
+    "markdown.preview.linkify": false,
+    "markdown.preview.openMarkdownLinks": "inEditor",
+    "markdown.preview.scrollEditorWithPreview": false,
+    "markdown.preview.scrollPreviewWithEditor": false,
+    "editor.minimap.enabled": false
+}
