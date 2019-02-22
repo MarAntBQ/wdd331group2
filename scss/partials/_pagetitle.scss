@@ -6,3 +6,31 @@ main > h1 {
 		color: $color-5;
 	}
 }
+
+$headerborder: 2px solid $color-2;
+$headerhmargin: 0px;
+$headerMpadding: 30px 0px 30px 50px;
+$headerSpadding: 10px 0px 10px 15px;
+$headerMwidth: 600px;
+$headerSwidth: 95%;
+$headermargins: 10px auto;
+
+.intro header {
+    border: $headerborder;
+    color: $color-2;
+    background: $color-3;
+    margin: $headermargins;
+    padding: $headerSpadding;
+    width: $headerSwidth;
+
+    h1,
+    h2 {
+        margin: $headerhmargin;
+    }
+
+    @include MQ(M) {
+        //title goes into the header on medium devices 
+        padding: $headerMpadding;
+        width: $headerMwidth;
+    }
+}
