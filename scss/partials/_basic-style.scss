@@ -45,38 +45,60 @@ input, textarea, select {
 .page-wrapper {  /* DIV */
 
 }
-.intro {  /* SECTION */
 
-}
 header {  
 
 }
 .summary {  /* DIV */
 	max-height: 400px;
+    width: 40%;
 	overflow: auto;
+    padding:10px;
+    background-color: $color-3;
+    margin: 20px;
 }
 .preamble {  /* DIV */
 	max-height: 400px;
+    width: 70%;
 	overflow: auto;
+    padding:10px;
+    background-color: $color-3;
+    margin: 20px;
 }
 .supporting {  /* DIV */
 	
 }
 .explanation {  /* DIV */
-	max-height: 400px;
+	max-height: 600px;
+    width: 25%;
 	overflow: auto;
+    padding:10px;
+    background-color: $color-3;
+    margin: 20px;
 }
 .participation {  /* DIV */
-	max-height: 400px;
+	max-height: 800px;
+    width: 45%;
 	overflow: auto;
+    padding:10px;
+    background-color: $color-3;
+    margin: 20px;
 }
 .benefits {  /* DIV */
-	max-height: 400px;
+	max-height: 600px;
+    width: 20%;
 	overflow: auto;
+    padding:10px;
+    background-color: $color-3;
+    margin: 20px;
 }
 .requirements {  /* DIV */
-	max-height: 400px;
+	max-height: 600px;
+    width: 60%;
 	overflow: auto;
+    padding:10px;
+    background-color: $color-3;
+    margin: 20px;
 }
 footer {  
 
@@ -96,9 +118,7 @@ footer {
 .design-archives {  /* DIV */
 
 }
-nav {
 
-}
 .next, .viewall, .view-css, .css-resources, .zen-faq, .zen-submit, .zen-translations {  /* LI */
 
 }
