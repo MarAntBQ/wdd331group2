@@ -27,3 +27,148 @@ $L:     1600px;
   float: $float-direction;
 }
 
+@include MQ(S) {
+    .page-wrapper {  /* DIV */
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 900px 900px;
+    
+    .intro {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    .main {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
+    .sidebar {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    }
+    
+    .intro, .main, .sidebar {
+        display:flex;
+        flex-wrap: wrap;
+    }
+    
+}
+
+@include MQ(M) {
+    .page-wrapper {  /* DIV */
+    grid-template-columns: 4fr 1fr;
+    }
+
+
+    .intro, .main, .sidebar {
+        display:flex;
+        flex-wrap: none;
+    }
+    
+    .intro {
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 250px 250px 300px;
+        grid-row-gap: 20px;
+
+        header {
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }
+
+        div:first-of-type{
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 2;
+            grid-row-end: 3;
+        }
+
+        div:last-of-type {
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 3;
+            grid-row-end: 4;
+        }
+    }
+
+    .main {
+        display:grid;
+        grid-template-columns: 0.5fr 1fr 1fr 1fr;
+        grid-template-rows: 250px 250px 250px 250px 250px;
+        grid-row-gap: 50px;
+
+
+        .explanation {
+            grid-column-start: 2;
+            grid-column-end: 4;
+            display: flex;
+            justify-content: left;
+        }
+
+        .participation {
+            grid-column-start: 3;
+            grid-column-end: 5;
+            grid-row-start: 2;
+            grid-row-end: 4;
+        }
+
+        .benefits {
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 3;
+            grid-row-end: 4;
+        }
+
+        .requirements {
+            grid-column-start: 2;
+            grid-column-end: 5;
+            grid-row-start: 4;
+            grid-row-end: 6;
+        }
+
+        footer {
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 5;
+            grid-row-end: 6;
+        }
+    }
+
+    .sidebar {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 250px 250px 250px 250px 250px;
+
+        .design-selection {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 4;
+        }
+        .design-archives {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start:4;
+            grid-row-end: 5;
+        }
+        .resources {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 5;
+            grid-row-end: 6;
+        }
+
+    }
+}
+
+

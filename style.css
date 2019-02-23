@@ -1,6 +1,134 @@
 @import url("https://fonts.googleapis.com/css?family=Sarabun");
 @import url("https://fonts.googleapis.com/css?family=Reenie+Beanie");
 @import url("https://fonts.googleapis.com/css?family=Sigmar+One");
+@media only screen and (min-width: 768px) {
+  .page-wrapper {
+    /* DIV */
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 900px 900px;
+  }
+  .page-wrapper .intro {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  .page-wrapper .main {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+  .page-wrapper .sidebar {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+
+  .intro, .main, .sidebar {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .page-wrapper {
+    /* DIV */
+    grid-template-columns: 4fr 1fr;
+  }
+
+  .intro, .main, .sidebar {
+    display: flex;
+    flex-wrap: none;
+  }
+
+  .intro {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 250px 250px 300px;
+    grid-row-gap: 20px;
+  }
+  .intro header {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  .intro div:first-of-type {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+  .intro div:last-of-type {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+
+  .main {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 1fr 1fr;
+    grid-template-rows: 250px 250px 250px 250px 250px;
+    grid-row-gap: 50px;
+  }
+  .main .explanation {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    display: flex;
+    justify-content: left;
+  }
+  .main .participation {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 4;
+  }
+  .main .benefits {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+  .main .requirements {
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 4;
+    grid-row-end: 6;
+  }
+  .main footer {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 5;
+    grid-row-end: 6;
+  }
+
+  .sidebar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 250px 250px 250px 250px 250px;
+  }
+  .sidebar .design-selection {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 4;
+  }
+  .sidebar .design-archives {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+  }
+  .sidebar .resources {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    grid-row-end: 6;
+  }
+}
 body {
   /* this is the page background */
   background-color: #ffffff;
@@ -193,115 +321,6 @@ input, textarea, select {
 }
 
 /* ###################  GROUP 2 STYLES  ##################### */
-.page-wrapper {
-  /* DIV */
-  display: grid;
-  grid-template-columns: 4fr 1fr;
-  grid-template-rows: 2fr 3fr;
-}
-.page-wrapper .intro {
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 1;
-  grid-row-end: 2;
-}
-.page-wrapper .main {
-  grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 2;
-  grid-row-end: 3;
-}
-.page-wrapper .sidebar {
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 1;
-  grid-row-end: 2;
-}
-
-.intro {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px;
-}
-.intro header {
-  grid-column-start: 5;
-  grid-column-end: 9;
-  grid-row-start: 1;
-  grid-row-end: 5;
-}
-.intro div:first-of-type {
-  grid-column-start: 5;
-  grid-column-end: 10;
-  grid-row-start: 6;
-  grid-row-end: 10;
-}
-.intro div:last-of-type {
-  grid-column-start: 3;
-  grid-column-end: 11;
-  grid-row-start: 11;
-  grid-row-end: 17;
-}
-
-.main {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px;
-}
-.main .explanation {
-  grid-column-start: 4;
-  grid-column-end: 12;
-  grid-row-start: 2;
-  grid-row-end: 10;
-}
-.main .participation {
-  grid-column-start: 15;
-  grid-column-end: 21;
-  grid-row-start: 5;
-  grid-row-end: 17;
-}
-.main .benefits {
-  grid-column-start: 5;
-  grid-column-end: 12;
-  grid-row-start: 11;
-  grid-row-end: 16;
-}
-.main .requirements {
-  grid-column-start: 7;
-  grid-column-end: 20;
-  grid-row-start: 17;
-  grid-row-end: 28;
-}
-.main footer {
-  grid-column-start: 4;
-  grid-column-end: 7;
-  grid-row-start: 22;
-  grid-row-end: 24;
-}
-
-.sidebar {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px;
-}
-.sidebar .design-selection {
-  grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 1;
-  grid-row-end: 5;
-}
-.sidebar .design-archives {
-  grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 5;
-  grid-row-end: 9;
-}
-.sidebar .resources {
-  grid-column-start: 1;
-  grid-column-end: 3;
-  grid-row-start: 10;
-  grid-row-end: 13;
-}
-
 .summary {
   /* DIV */
   max-height: 400px;
@@ -330,7 +349,7 @@ input, textarea, select {
 .explanation {
   /* DIV */
   max-height: 600px;
-  width: 100%;
+  width: 80%;
   overflow: auto;
   padding: 10px;
   background-color: #ffffff;
@@ -340,7 +359,7 @@ input, textarea, select {
 .participation {
   /* DIV */
   max-height: 800px;
-  width: 100%;
+  width: 90%;
   overflow: auto;
   padding: 10px;
   background-color: #ffffff;
@@ -350,7 +369,7 @@ input, textarea, select {
 .benefits {
   /* DIV */
   max-height: 600px;
-  width: 100%;
+  width: 70%;
   overflow: auto;
   padding: 10px;
   background-color: #ffffff;
@@ -360,7 +379,7 @@ input, textarea, select {
 .requirements {
   /* DIV */
   max-height: 600px;
-  width: 100%;
+  width: 80%;
   overflow: auto;
   padding: 10px;
   background-color: #ffffff;
@@ -370,6 +389,8 @@ input, textarea, select {
 footer {
   background-color: #fff379;
   padding: 15px;
+  width: 200px;
+  height: 50px;
 }
 
 .sidebar h3 {
