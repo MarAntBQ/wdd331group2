@@ -198,7 +198,13 @@ input, textarea, select {
 }
 
 .intro {
-  /* SECTION */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+
+intro div:first-of-type {
+  grid-column-start: 3;
 }
 
 .summary {

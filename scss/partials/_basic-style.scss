@@ -49,6 +49,17 @@ input, textarea, select {
 header {  
 
 }
+
+.intro {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+
+intro div:first-of-type{
+    grid-column-start: 3;
+}
+
 .summary {  /* DIV */
 	max-height: 400px;
     width: 40%;
