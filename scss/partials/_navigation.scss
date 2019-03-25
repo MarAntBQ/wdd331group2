@@ -1,5 +1,5 @@
 header {
-	background-color: $color-2;
+    background-color: $color-2;
 }
 
 //Varibles
@@ -16,6 +16,7 @@ $asideMargins: 0px auto;
 .sidebar {
     margin: $asideMargins;
     width: $asideSwidth;
+
     .design-selection,
     .design-archives,
     .zen-resources {
@@ -27,6 +28,8 @@ $asideMargins: 0px auto;
 
         h3 {
             margin: $asideh3margins;
+            position: relative;
+            top: -23px;
         }
 
         ul {
@@ -34,7 +37,8 @@ $asideMargins: 0px auto;
             padding: $asideulpaddings;
         }
     }
+
     @include MQ(M) {
-       width: $asideMwidth; 
+        width: $asideMwidth;
     }
 }
