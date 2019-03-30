@@ -1,21 +1,29 @@
 // breakpoints
-   
-$S:     768px;   
-$M:     1024px;     
-$L:     1600px;   
+
+$S: 768px;
+$M: 1024px;
+$L: 1600px;
 
 // media queries
 
 @mixin MQ($canvas) {
-  @if $canvas == S {
-   @media only screen and (min-width: $S) { @content; } 
-  }
-  @else if $canvas == M {
-      @media only screen and (min-width: $M) { @content; } 
-  }
-  @else if $canvas == L {
-   @media only screen and (min-width: $L) { @content; } 
-  }
+    @if $canvas==S {
+        @media only screen and (min-width: $S) {
+            @content;
+        }
+    }
+
+    @else if $canvas==M {
+        @media only screen and (min-width: $M) {
+            @content;
+        }
+    }
+
+    @else if $canvas==L {
+        @media only screen and (min-width: $L) {
+            @content;
+        }
+    }
 }
 
 // super light grid - it works with the .cd-container class inside style.scss
@@ -23,58 +31,64 @@ $L:     1600px;
 //When I try to remove the below code, the entire page loses all styles.
 
 @mixin column($percentage, $float-direction:left) {
-  width: 100% * $percentage;
-  float: $float-direction;
+    width: 100% * $percentage;
+    float: $float-direction;
 }
 
 @include MQ(S) {
-    .page-wrapper {  /* DIV */
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: 900px 900px;
-    
-    .intro {
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 1;
-        grid-row-end: 2;
+    .page-wrapper {
+        /* DIV */
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 900px 900px;
+
+        .intro {
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }
+
+        .main {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 2;
+            grid-row-end: 3;
+        }
+
+        .sidebar {
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }
     }
 
-    .main {
-        grid-column-start: 1;
-        grid-column-end: 3;
-        grid-row-start: 2;
-        grid-row-end: 3;
-    }
-
+    .intro,
+    .main,
     .sidebar {
-        grid-column-start: 2;
-        grid-column-end: 3;
-        grid-row-start: 1;
-        grid-row-end: 2;
-    }
-    }
-    
-    .intro, .main, .sidebar {
-        display:flex;
+        display: flex;
         flex-wrap: wrap;
     }
-    
+
 }
 
 @include MQ(M) {
-    .page-wrapper {  /* DIV */
-    grid-template-columns: 4fr 1fr;
+    .page-wrapper {
+        /* DIV */
+        grid-template-columns: 4fr 1fr;
     }
 
 
-    .intro, .main, .sidebar {
-        display:flex;
+    .intro,
+    .main,
+    .sidebar {
+        display: flex;
         flex-wrap: none;
     }
-    
+
     .intro {
-        display:grid;
+        display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 250px 250px 300px;
         grid-row-gap: 20px;
@@ -86,7 +100,7 @@ $L:     1600px;
             grid-row-end: 2;
         }
 
-        div:first-of-type{
+        div:first-of-type {
             grid-column-start: 2;
             grid-column-end: 3;
             grid-row-start: 2;
@@ -102,7 +116,7 @@ $L:     1600px;
     }
 
     .main {
-        display:grid;
+        display: grid;
         grid-template-columns: 0.5fr 1fr 1fr 1fr;
         grid-template-rows: 250px 250px 250px 250px 250px;
         grid-row-gap: 50px;
@@ -155,12 +169,14 @@ $L:     1600px;
             grid-row-start: 1;
             grid-row-end: 4;
         }
+
         .design-archives {
             grid-column-start: 1;
             grid-column-end: 3;
-            grid-row-start:4;
+            grid-row-start: 4;
             grid-row-end: 5;
         }
+
         .resources {
             grid-column-start: 1;
             grid-column-end: 3;
@@ -171,4 +187,172 @@ $L:     1600px;
     }
 }
 
+// Post Stick Notes positions in full screen
 
+
+#zen-intro {
+    header {
+        h2 {
+            padding-bottom: 40px;
+            position: absolute;
+            left: -63px;
+            top: -30px;
+            transform: rotate(15deg) scale(0.29);
+            filter: drop-shadow(8px 8px 10px #808080);
+            transition: 0.8s all;
+
+            @include MQ(S) {
+                height: 120px;
+                width: 170px;
+                transform: scale(1) rotate(14deg);
+                left: 14px;
+                top: 85px;
+            }
+
+            @include MQ(M) {
+                transform: scale(1.2) rotate(14deg);
+                left: 40px;
+                top: 105px;
+            }
+        }
+
+        @include MQ(M) {
+            height: 128px;
+        }
+    }
+}
+
+#zen-preamble {
+    h3 {
+        padding-bottom: 40px;
+        position: absolute;
+        left: 158px;
+        top: 215px;
+        transform: rotate(15deg) scale(0.35);
+        filter: drop-shadow(8px 8px 10px #808080);
+        transition: 0.8s all;
+
+        @include MQ(S) {
+            font-size: 2em;
+            height: 140px;
+            width: 170px;
+            transform: scale(0.8) rotate(14deg);
+            left: 230px;
+            top: 410px;
+        }
+
+        @include MQ(M) {
+            transform: scale(1) rotate(14deg);
+            left: 250px;
+            top: 520px;
+        }
+    }
+}
+
+#zen-explanation {
+    h3 {
+        padding-bottom: 40px;
+        position: absolute;
+        left: 158px;
+        top: 520px;
+        transform: rotate(15deg) scale(0.35);
+        filter: drop-shadow(8px 8px 10px #808080);
+        transition: 0.8s all;
+
+        @include MQ(S) {
+            font-size: 2em;
+            height: 140px;
+            width: 170px;
+            transform: scale(0.8) rotate(14deg);
+            left: 230px;
+            top: 860px;
+        }
+
+        @include MQ(M) {
+            transform: scale(1) rotate(14deg);
+            left: 250px;
+            top: 950px;
+        }
+    }
+}
+
+#zen-participation {
+     h3 {
+        padding-bottom: 40px;
+        position: absolute;
+        left: 158px;
+        top: 930px;
+        transform: rotate(15deg) scale(0.32);
+        filter: drop-shadow(8px 8px 10px #808080);
+        transition: 0.8s all;
+
+        @include MQ(S) {
+            font-size: 2em;
+            height: 140px;
+            width: 170px;
+            transform: scale(0.6) rotate(14deg);
+            left: 210px;
+            top: 1245px;
+        }
+
+        @include MQ(M) {
+            transform: scale(1) rotate(14deg);
+            left: 500px;
+            top: 1245px;
+        }
+    }
+}
+
+#zen-benefits {
+    h3 {
+        padding-bottom: 40px;
+        position: absolute;
+        left: 158px;
+        top: 1370px;
+        transform: rotate(15deg) scale(0.32);
+        filter: drop-shadow(8px 8px 10px #808080);
+        transition: 0.8s all;
+
+        @include MQ(S) {
+            font-size: 2em;
+            height: 140px;
+            width: 170px;
+            transform: scale(0.6) rotate(14deg);
+            left: 190px;
+            top: 1670px;
+        }
+
+        @include MQ(M) {
+            transform: scale(1) rotate(14deg);
+            left: 260px;
+            top: 1470px;
+        }
+    }
+}
+
+#zen-requirements {
+    h3 {
+        padding-bottom: 40px;
+        position: absolute;
+        left: 158px;
+        top: 1610px;
+        transform: rotate(15deg) scale(0.32);
+        filter: drop-shadow(8px 8px 10px #808080);
+        transition: 0.8s all;
+
+        @include MQ(S) {
+            font-size: 2em;
+            height: 140px;
+            width: 170px;
+            transform: scale(0.6) rotate(14deg);
+            left: 190px;
+            top: 1890px;
+        }
+
+        @include MQ(M) {
+            transform: scale(1) rotate(14deg);
+            left: 260px;
+            top: 1870px;
+        }
+    }
+}

@@ -1,6 +1,304 @@
 @import url("https://fonts.googleapis.com/css?family=Sarabun");
 @import url("https://fonts.googleapis.com/css?family=Reenie+Beanie");
 @import url("https://fonts.googleapis.com/css?family=Sigmar+One");
+@media only screen and (min-width: 768px) {
+  .page-wrapper {
+    /* DIV */
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 900px 900px;
+  }
+  .page-wrapper .intro {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  .page-wrapper .main {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+  .page-wrapper .sidebar {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+
+  .intro,
+.main,
+.sidebar {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .page-wrapper {
+    /* DIV */
+    grid-template-columns: 4fr 1fr;
+  }
+
+  .intro,
+.main,
+.sidebar {
+    display: flex;
+    flex-wrap: none;
+  }
+
+  .intro {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 250px 250px 300px;
+    grid-row-gap: 20px;
+  }
+  .intro header {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  .intro div:first-of-type {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+  .intro div:last-of-type {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+
+  .main {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 1fr 1fr;
+    grid-template-rows: 250px 250px 250px 250px 250px;
+    grid-row-gap: 50px;
+  }
+  .main .explanation {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    display: flex;
+    justify-content: left;
+  }
+  .main .participation {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 4;
+  }
+  .main .benefits {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+  .main .requirements {
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 4;
+    grid-row-end: 6;
+  }
+  .main footer {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 5;
+    grid-row-end: 6;
+  }
+
+  .sidebar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 250px 250px 250px 250px 250px;
+  }
+  .sidebar .design-selection {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 4;
+  }
+  .sidebar .design-archives {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+  }
+  .sidebar .resources {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    grid-row-end: 6;
+  }
+}
+#zen-intro header h2 {
+  padding-bottom: 40px;
+  position: absolute;
+  left: -63px;
+  top: -30px;
+  transform: rotate(15deg) scale(0.29);
+  filter: drop-shadow(8px 8px 10px #808080);
+  transition: 0.8s all;
+}
+@media only screen and (min-width: 768px) {
+  #zen-intro header h2 {
+    height: 120px;
+    width: 170px;
+    transform: scale(1) rotate(14deg);
+    left: 14px;
+    top: 85px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  #zen-intro header h2 {
+    transform: scale(1.2) rotate(14deg);
+    left: 40px;
+    top: 105px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  #zen-intro header {
+    height: 128px;
+  }
+}
+
+#zen-preamble h3 {
+  padding-bottom: 40px;
+  position: absolute;
+  left: 158px;
+  top: 215px;
+  transform: rotate(15deg) scale(0.35);
+  filter: drop-shadow(8px 8px 10px #808080);
+  transition: 0.8s all;
+}
+@media only screen and (min-width: 768px) {
+  #zen-preamble h3 {
+    font-size: 2em;
+    height: 140px;
+    width: 170px;
+    transform: scale(0.8) rotate(14deg);
+    left: 230px;
+    top: 410px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  #zen-preamble h3 {
+    transform: scale(1) rotate(14deg);
+    left: 250px;
+    top: 520px;
+  }
+}
+
+#zen-explanation h3 {
+  padding-bottom: 40px;
+  position: absolute;
+  left: 158px;
+  top: 520px;
+  transform: rotate(15deg) scale(0.35);
+  filter: drop-shadow(8px 8px 10px #808080);
+  transition: 0.8s all;
+}
+@media only screen and (min-width: 768px) {
+  #zen-explanation h3 {
+    font-size: 2em;
+    height: 140px;
+    width: 170px;
+    transform: scale(0.8) rotate(14deg);
+    left: 230px;
+    top: 860px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  #zen-explanation h3 {
+    transform: scale(1) rotate(14deg);
+    left: 250px;
+    top: 950px;
+  }
+}
+
+#zen-participation h3 {
+  padding-bottom: 40px;
+  position: absolute;
+  left: 158px;
+  top: 930px;
+  transform: rotate(15deg) scale(0.32);
+  filter: drop-shadow(8px 8px 10px #808080);
+  transition: 0.8s all;
+}
+@media only screen and (min-width: 768px) {
+  #zen-participation h3 {
+    font-size: 2em;
+    height: 140px;
+    width: 170px;
+    transform: scale(0.6) rotate(14deg);
+    left: 210px;
+    top: 1245px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  #zen-participation h3 {
+    transform: scale(1) rotate(14deg);
+    left: 500px;
+    top: 1245px;
+  }
+}
+
+#zen-benefits h3 {
+  padding-bottom: 40px;
+  position: absolute;
+  left: 158px;
+  top: 1370px;
+  transform: rotate(15deg) scale(0.32);
+  filter: drop-shadow(8px 8px 10px #808080);
+  transition: 0.8s all;
+}
+@media only screen and (min-width: 768px) {
+  #zen-benefits h3 {
+    font-size: 2em;
+    height: 140px;
+    width: 170px;
+    transform: scale(0.6) rotate(14deg);
+    left: 190px;
+    top: 1670px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  #zen-benefits h3 {
+    transform: scale(1) rotate(14deg);
+    left: 260px;
+    top: 1470px;
+  }
+}
+
+#zen-requirements h3 {
+  padding-bottom: 40px;
+  position: absolute;
+  left: 158px;
+  top: 1610px;
+  transform: rotate(15deg) scale(0.32);
+  filter: drop-shadow(8px 8px 10px #808080);
+  transition: 0.8s all;
+}
+@media only screen and (min-width: 768px) {
+  #zen-requirements h3 {
+    font-size: 2em;
+    height: 140px;
+    width: 170px;
+    transform: scale(0.6) rotate(14deg);
+    left: 190px;
+    top: 1890px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  #zen-requirements h3 {
+    transform: scale(1) rotate(14deg);
+    left: 260px;
+    top: 1870px;
+  }
+}
+
 body {
   /* this is the page background */
   background-color: #ffffff;
@@ -22,7 +320,7 @@ header {
 
 .sidebar {
   margin: 0px auto;
-  width: 80%;
+  width: 100%;
 }
 .sidebar .design-selection,
 .sidebar .design-archives,
@@ -37,6 +335,8 @@ header {
 .sidebar .design-archives h3,
 .sidebar .zen-resources h3 {
   margin: 0px 0px 10px 0px;
+  position: relative;
+  top: -23px;
 }
 .sidebar .design-selection ul,
 .sidebar .design-archives ul,
@@ -86,6 +386,14 @@ h1 {
 h2, h3, h4, h5, h6 {
   font-family: "Reenie Beanie", cursive;
   color: #302023;
+  background-color: #fff379;
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  font-size: 2.5em;
+  padding: 40px 10px 0px 10px;
+  margin-left: -210px;
+  margin-top: -75px;
 }
 
 p, li {
@@ -185,24 +493,25 @@ input, textarea, select {
 }
 
 /* ###################  GROUP 2 STYLES  ##################### */
-.page-wrapper {
-  /* DIV */
-}
-
-.intro {
-  /* SECTION */
-}
-
 .summary {
   /* DIV */
   max-height: 400px;
+  width: 100%;
   overflow: auto;
+  padding: 10px;
+  background-color: #ffffff;
+  margin: 20px;
 }
 
 .preamble {
   /* DIV */
   max-height: 400px;
+  width: 100%;
   overflow: auto;
+  padding: 10px;
+  background-color: #ffffff;
+  margin: 20px;
+  padding-left: 50px;
 }
 
 .supporting {
@@ -211,30 +520,58 @@ input, textarea, select {
 
 .explanation {
   /* DIV */
-  max-height: 400px;
+  max-height: 600px;
+  width: 80%;
   overflow: auto;
+  padding: 10px;
+  background-color: #ffffff;
+  margin: 20px;
 }
 
 .participation {
   /* DIV */
-  max-height: 400px;
+  max-height: 800px;
+  width: 90%;
   overflow: auto;
+  padding: 10px;
+  background-color: #ffffff;
+  margin: 20px;
 }
 
 .benefits {
   /* DIV */
-  max-height: 400px;
+  max-height: 600px;
+  width: 70%;
   overflow: auto;
+  padding: 10px;
+  background-color: #ffffff;
+  margin: 20px;
 }
 
 .requirements {
   /* DIV */
-  max-height: 400px;
+  max-height: 600px;
+  width: 80%;
   overflow: auto;
+  padding: 10px;
+  background-color: #ffffff;
+  margin: 20px;
 }
 
-.sidebar {
+footer {
+  background-color: #fff379;
+  padding: 15px;
+  width: 200px;
+  height: 50px;
+}
+
+.sidebar h3 {
   /* ASIDE */
+  height: 50px;
+  width: 150px;
+  position: absolute;
+  font-size: 1.5em;
+  padding: 5px;
 }
 
 .wrapper {
