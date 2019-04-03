@@ -139,7 +139,7 @@
   left: -63px;
   top: -30px;
   transform: rotate(15deg) scale(0.29);
-  filter: drop-shadow(8px 8px 10px #808080);
+  filter: drop-shadow(8px 8px 10px #885b1d);
   transition: 0.8s all;
 }
 @media only screen and (min-width: 768px) {
@@ -170,7 +170,7 @@
   left: 158px;
   top: 215px;
   transform: rotate(15deg) scale(0.35);
-  filter: drop-shadow(8px 8px 10px #808080);
+  filter: drop-shadow(8px 8px 10px #885b1d);
   transition: 0.8s all;
 }
 @media only screen and (min-width: 768px) {
@@ -197,7 +197,7 @@
   left: 158px;
   top: 520px;
   transform: rotate(15deg) scale(0.35);
-  filter: drop-shadow(8px 8px 10px #808080);
+  filter: drop-shadow(8px 8px 10px #885b1d);
   transition: 0.8s all;
 }
 @media only screen and (min-width: 768px) {
@@ -224,7 +224,7 @@
   left: 158px;
   top: 930px;
   transform: rotate(15deg) scale(0.32);
-  filter: drop-shadow(8px 8px 10px #808080);
+  filter: drop-shadow(8px 8px 10px #885b1d);
   transition: 0.8s all;
 }
 @media only screen and (min-width: 768px) {
@@ -251,7 +251,7 @@
   left: 158px;
   top: 1370px;
   transform: rotate(15deg) scale(0.32);
-  filter: drop-shadow(8px 8px 10px #808080);
+  filter: drop-shadow(8px 8px 10px #885b1d);
   transition: 0.8s all;
 }
 @media only screen and (min-width: 768px) {
@@ -278,7 +278,7 @@
   left: 158px;
   top: 1610px;
   transform: rotate(15deg) scale(0.32);
-  filter: drop-shadow(8px 8px 10px #808080);
+  filter: drop-shadow(8px 8px 10px #885b1d);
   transition: 0.8s all;
 }
 @media only screen and (min-width: 768px) {
@@ -337,6 +337,7 @@ header {
   margin: 0px 0px 10px 0px;
   position: relative;
   top: -23px;
+  filter: drop-shadow(8px 8px 10px #885b1d);
 }
 .sidebar .design-selection ul,
 .sidebar .design-archives ul,
@@ -440,7 +441,7 @@ p {
   color: #7d535b;
 }
 p a {
-  color: #fff379;
+  color: #c5894a;
   text-decoration: underline;
 }
 @media only screen and (min-width: 768px) {
@@ -477,6 +478,15 @@ body {
 
 a {
   text-decoration: none;
+  color: #c5894a;
+}
+
+a:hover {
+  color: #7c4c32;
+}
+
+a:active {
+  color: #b9aa0c;
 }
 
 img {
@@ -563,6 +573,9 @@ footer {
   padding: 15px;
   width: 200px;
   height: 50px;
+  filter: drop-shadow(8px 8px 10px #885b1d);
+  position: relative;
+  top: -15px;
 }
 
 .sidebar h3 {
