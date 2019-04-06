@@ -135,6 +135,10 @@
 }
 #zen-intro header h2 {
   padding-bottom: 40px;
+  margin-left: -200px;
+  position: relative;
+  left: -63px;
+  top: -30px;
   transform: rotate(15deg) scale(0.29);
   filter: drop-shadow(8px 8px 10px #885b1d);
   transition: 0.8s all;
@@ -609,7 +613,7 @@ footer {
 }
 
 h3 {
-  background-image: url(https://richardbarnetbyui.github.io/wdd331group2/assets/redsvgpin.svg);
+  background-image: url(../../redpin.html);
 }
 
 /*# sourceMappingURL=style.css.map */
