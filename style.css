@@ -477,6 +477,11 @@ footer {
   padding-left: 50px;
 }
 
+.page-wrapper {
+  max-width: 1400px;
+  margin: auto;
+}
+
 *[role=article] {
   background-image: url(assets/redsvgpin.svg);
   background-repeat: no-repeat;
