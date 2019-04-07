@@ -469,7 +469,7 @@ footer {
 
 .sidebar h3 {
   /* ASIDE */
-  height: 50px;
+  height: 63px;
   width: 150px;
   position: absolute;
   font-size: 1.5em;
@@ -483,8 +483,8 @@ footer {
 }
 
 *[role=article] h3 {
-  background-image: url(assets/redpin.png);
   background-image: url(assets/redsvgpin.svg);
+  background-image: url(assets/redpin.png);
   background-repeat: no-repeat;
   background-size: auto 50%;
 }

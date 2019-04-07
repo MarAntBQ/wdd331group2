@@ -483,8 +483,8 @@ footer {
 }
 
 *[role=article] h3 {
-  background-image: url(assets/redsvgpin.svg);
   background-image: url(assets/redpin.png);
+  background-image: url(assets/redsvgpin.svg);
   background-repeat: no-repeat;
   background-size: auto 50%;
 }
