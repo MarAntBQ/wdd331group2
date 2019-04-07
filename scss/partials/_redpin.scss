@@ -1,7 +1,7 @@
-*[role="article"] {
+*[role="article"] h3 {
     background-image: url(assets/redpin.png);
     background-image: url(assets/redsvgpin.svg);
     background-repeat: no-repeat;
     background-size: auto 50%;
 }
-/* note: the SVG works fine in Firefox, but not in Chrome, not sure why... */
+/* NOTE: the SVG works fine in Firefox, but not in Chrome, not sure why... */
