@@ -491,8 +491,8 @@ footer {
 
 /* NOTE: the SVG works fine in Firefox, but not in Chrome, not sure why... */
 *[role=complementary] h3 {
-  background-image: url(assets/redsvgpin.svg);
   background-image: url(assets/redpin.png);
+  background-image: url(assets/redsvgpin.svg);
   background-repeat: no-repeat;
   background-size: auto 50%;
 }
