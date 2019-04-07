@@ -4,7 +4,7 @@
     background-repeat: no-repeat;
     background-size: auto 25%;
 }
-/* NOTE: the SVG works fine in Firefox, but not in Chrome, not sure why... */
+/* NOTE: the SVG works fine in Firefox and Edge, but not in Chrome or Opera, not sure why... */
 
 *[role="complementary"] h3 {
     background-image: url(assets/redpin.png);
