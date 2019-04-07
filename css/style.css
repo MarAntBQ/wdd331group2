@@ -183,7 +183,7 @@
 body {
   /* this is the page background */
   background-color: #ffffff;
-  background-image: url(assets/corkbackground2.jpg);
+  background-image: url(assets/corkbackground3.jpg);
 }
 
 .cd-box {
@@ -355,6 +355,7 @@ html {
 body {
   font-size: 1.6rem;
   font-family: "Sarabun", sans-serif;
+  cursor: url("cursor.cur"), default;
 }
 
 a {
