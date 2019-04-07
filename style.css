@@ -476,7 +476,7 @@ footer {
   padding-left: 50px;
 }
 
-h3 {
+*[role=article] {
   background-image: url(https://richardbarnetbyui.github.io/wdd331group2/assets/redsvgpin.svg);
   background-repeat: no-repeat;
   background-size: auto 50%;
