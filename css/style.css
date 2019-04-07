@@ -387,7 +387,7 @@ input, textarea, select {
 .summary {
   /* DIV */
   max-height: 400px;
-  width: 100%;
+  max-width: 100%;
   overflow: auto;
   padding: 10px;
   background-color: #ffffff;
@@ -398,7 +398,7 @@ input, textarea, select {
 .preamble {
   /* DIV */
   max-height: 400px;
-  width: 100%;
+  max-width: 100%;
   overflow: auto;
   padding: 10px;
   background-color: #ffffff;
@@ -413,7 +413,7 @@ input, textarea, select {
 .explanation {
   /* DIV */
   max-height: 800px;
-  width: 80%;
+  max-width: 80%;
   overflow: auto;
   padding: 10px;
   background-color: #ffffff;
@@ -424,7 +424,7 @@ input, textarea, select {
 .participation {
   /* DIV */
   max-height: 800px;
-  width: 70%;
+  max-width: 70%;
   overflow: auto;
   padding: 10px;
   background-color: #ffffff;
@@ -435,7 +435,7 @@ input, textarea, select {
 .benefits {
   /* DIV */
   max-height: 600px;
-  width: 70%;
+  max-width: 70%;
   overflow: auto;
   padding: 10px;
   background-color: #ffffff;
@@ -446,7 +446,7 @@ input, textarea, select {
 .requirements {
   /* DIV */
   max-height: 600px;
-  width: 80%;
+  max-width: 80%;
   overflow: auto;
   padding: 10px;
   background-color: #ffffff;
@@ -457,8 +457,8 @@ input, textarea, select {
 footer {
   background-color: #fff379;
   padding: 15px;
-  width: 200px;
-  height: 50px;
+  max-width: 250px;
+  max-height: 150px;
   filter: drop-shadow(8px 8px 10px #885b1d);
   position: relative;
   top: -15px;
