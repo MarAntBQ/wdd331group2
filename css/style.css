@@ -482,13 +482,19 @@ footer {
   margin: auto;
 }
 
-*[role=article] h3 {
+*[role=article] h3, *[role=banner] h2, footer {
+  background-image: url(assets/redsvgpin.svg);
+  background-image: url(assets/redpin.png);
+  background-repeat: no-repeat;
+  background-size: auto 25%;
+}
+
+/* NOTE: the SVG works fine in Firefox, but not in Chrome, not sure why... */
+*[role=complementary] h3 {
   background-image: url(assets/redsvgpin.svg);
   background-image: url(assets/redpin.png);
   background-repeat: no-repeat;
   background-size: auto 50%;
 }
-
-/* NOTE: the SVG works fine in Firefox, but not in Chrome, not sure why... */
 
 /*# sourceMappingURL=style.css.map */
