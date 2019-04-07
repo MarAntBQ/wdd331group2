@@ -186,6 +186,7 @@ body {
   background-image: url(assets/corkbackground3.jpg);
 }
 
+/* background image photo credit: https://unsplash.com/photos/82TpEld0_e4 */
 .cd-box {
   /* this is the container of various design elements - i.e. the 2 logo of the branding section */
   border: 1px solid #f81415;
@@ -477,9 +478,11 @@ footer {
 }
 
 *[role=article] {
-  background-image: url(https://richardbarnetbyui.github.io/wdd331group2/assets/redsvgpin.svg);
+  background-image: url(assets/redsvgpin.svg);
   background-repeat: no-repeat;
   background-size: auto 50%;
 }
+
+/* note: this works fine in Firefox, but not in Chrome, not sure why... */
 
 /*# sourceMappingURL=style.css.map */
