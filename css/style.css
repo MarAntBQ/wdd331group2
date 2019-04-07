@@ -135,7 +135,7 @@
 }
 #zen-intro header h2 {
   padding-bottom: 40px;
-  transform: rotate(15deg) scale(0.29);
+  transform: rotate(15deg) scale(0.5);
   filter: drop-shadow(8px 8px 10px #885b1d);
   transition: 0.8s all;
 }
@@ -144,15 +144,11 @@
     height: 120px;
     width: 170px;
     transform: scale(1) rotate(14deg);
-    left: 14px;
-    top: 85px;
   }
 }
 @media only screen and (min-width: 1024px) {
   #zen-intro header h2 {
     transform: scale(1.2) rotate(14deg);
-    left: 40px;
-    top: 105px;
   }
 }
 @media only screen and (min-width: 1024px) {
@@ -161,138 +157,26 @@
   }
 }
 
-#zen-preamble h3 {
+#zen-preamble, #zen-explanation, #zen-participation, #zen-benefits, #zen-requirements {
+  margin-left: 150px;
+}
+#zen-preamble h3, #zen-explanation h3, #zen-participation h3, #zen-benefits h3, #zen-requirements h3 {
   padding-bottom: 40px;
-  position: absolute;
-  left: 158px;
-  top: 215px;
-  transform: rotate(15deg) scale(0.35);
+  transform: rotate(15deg) scale(0.5);
   filter: drop-shadow(8px 8px 10px #885b1d);
   transition: 0.8s all;
 }
 @media only screen and (min-width: 768px) {
-  #zen-preamble h3 {
+  #zen-preamble h3, #zen-explanation h3, #zen-participation h3, #zen-benefits h3, #zen-requirements h3 {
     font-size: 2em;
     height: 140px;
     width: 170px;
     transform: scale(0.8) rotate(14deg);
-    left: 230px;
-    top: 410px;
   }
 }
 @media only screen and (min-width: 1024px) {
-  #zen-preamble h3 {
+  #zen-preamble h3, #zen-explanation h3, #zen-participation h3, #zen-benefits h3, #zen-requirements h3 {
     transform: scale(1) rotate(14deg);
-    left: 250px;
-    top: 520px;
-  }
-}
-
-#zen-explanation h3 {
-  padding-bottom: 40px;
-  position: absolute;
-  left: 158px;
-  top: 520px;
-  transform: rotate(15deg) scale(0.35);
-  filter: drop-shadow(8px 8px 10px #885b1d);
-  transition: 0.8s all;
-}
-@media only screen and (min-width: 768px) {
-  #zen-explanation h3 {
-    font-size: 2em;
-    height: 140px;
-    width: 170px;
-    transform: scale(0.8) rotate(14deg);
-    left: 230px;
-    top: 860px;
-  }
-}
-@media only screen and (min-width: 1024px) {
-  #zen-explanation h3 {
-    transform: scale(1) rotate(14deg);
-    left: 250px;
-    top: 950px;
-  }
-}
-
-#zen-participation h3 {
-  padding-bottom: 40px;
-  position: absolute;
-  left: 158px;
-  top: 930px;
-  transform: rotate(15deg) scale(0.32);
-  filter: drop-shadow(8px 8px 10px #885b1d);
-  transition: 0.8s all;
-}
-@media only screen and (min-width: 768px) {
-  #zen-participation h3 {
-    font-size: 2em;
-    height: 140px;
-    width: 170px;
-    transform: scale(0.6) rotate(14deg);
-    left: 210px;
-    top: 1245px;
-  }
-}
-@media only screen and (min-width: 1024px) {
-  #zen-participation h3 {
-    transform: scale(1) rotate(14deg);
-    left: 500px;
-    top: 1245px;
-  }
-}
-
-#zen-benefits h3 {
-  padding-bottom: 40px;
-  position: absolute;
-  left: 158px;
-  top: 1370px;
-  transform: rotate(15deg) scale(0.32);
-  filter: drop-shadow(8px 8px 10px #885b1d);
-  transition: 0.8s all;
-}
-@media only screen and (min-width: 768px) {
-  #zen-benefits h3 {
-    font-size: 2em;
-    height: 140px;
-    width: 170px;
-    transform: scale(0.6) rotate(14deg);
-    left: 190px;
-    top: 1670px;
-  }
-}
-@media only screen and (min-width: 1024px) {
-  #zen-benefits h3 {
-    transform: scale(1) rotate(14deg);
-    left: 260px;
-    top: 1470px;
-  }
-}
-
-#zen-requirements h3 {
-  padding-bottom: 40px;
-  position: absolute;
-  left: 158px;
-  top: 1610px;
-  transform: rotate(15deg) scale(0.32);
-  filter: drop-shadow(8px 8px 10px #885b1d);
-  transition: 0.8s all;
-}
-@media only screen and (min-width: 768px) {
-  #zen-requirements h3 {
-    font-size: 2em;
-    height: 140px;
-    width: 170px;
-    transform: scale(0.6) rotate(14deg);
-    left: 190px;
-    top: 1890px;
-  }
-}
-@media only screen and (min-width: 1024px) {
-  #zen-requirements h3 {
-    transform: scale(1) rotate(14deg);
-    left: 260px;
-    top: 1870px;
   }
 }
 
@@ -390,7 +274,7 @@ h2, h3, h4, h5, h6 {
   position: absolute;
   font-size: 2.5em;
   padding: 40px 10px 0px 10px;
-  margin-left: -210px;
+  margin-left: -175px;
   margin-top: -75px;
 }
 
@@ -508,6 +392,7 @@ input, textarea, select {
   padding: 10px;
   background-color: #ffffff;
   margin: 20px;
+  padding-left: 50px;
 }
 
 .preamble {
@@ -527,22 +412,24 @@ input, textarea, select {
 
 .explanation {
   /* DIV */
-  max-height: 600px;
+  max-height: 800px;
   width: 80%;
   overflow: auto;
   padding: 10px;
   background-color: #ffffff;
   margin: 20px;
+  padding-left: 50px;
 }
 
 .participation {
   /* DIV */
   max-height: 800px;
-  width: 90%;
+  width: 70%;
   overflow: auto;
   padding: 10px;
   background-color: #ffffff;
   margin: 20px;
+  padding-left: 50px;
 }
 
 .benefits {
@@ -553,6 +440,7 @@ input, textarea, select {
   padding: 10px;
   background-color: #ffffff;
   margin: 20px;
+  padding-left: 50px;
 }
 
 .requirements {
@@ -563,6 +451,7 @@ input, textarea, select {
   padding: 10px;
   background-color: #ffffff;
   margin: 20px;
+  padding-left: 50px;
 }
 
 footer {
@@ -573,6 +462,7 @@ footer {
   filter: drop-shadow(8px 8px 10px #885b1d);
   position: relative;
   top: -15px;
+  padding-left: 50px;
 }
 
 .sidebar h3 {
@@ -582,30 +472,7 @@ footer {
   position: absolute;
   font-size: 1.5em;
   padding: 5px;
-}
-
-.wrapper {
-  /* DIV */
-}
-
-.design-selection {
-  /* DIV */
-}
-
-.select, .archives, .resources {
-  /* H3 */
-}
-
-.design-archives {
-  /* DIV */
-}
-
-.next, .viewall, .view-css, .css-resources, .zen-faq, .zen-submit, .zen-translations {
-  /* LI */
-}
-
-.zen-resources {
-  /* DIV */
+  padding-left: 50px;
 }
 
 h3 {

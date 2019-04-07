@@ -187,168 +187,52 @@ $L: 1600px;
     }
 }
 
+
+//Animations and Transitions
 // Post Stick Notes positions in full screen
 
 #zen-intro {
-        header {
-                h2 {
-                    padding-bottom: 40px;
-                    transform: rotate(15deg) scale(0.29);
-                    filter: drop-shadow(8px 8px 10px #885b1d);
-                    transition: 0.8s all;
+    header {
+            h2 {
+                padding-bottom: 40px;
+                transform: rotate(15deg) scale(0.5);
+                filter: drop-shadow(8px 8px 10px #885b1d);
+                transition: 0.8s all;
 
-                    @include MQ(S) {
-                        height: 120px;
-                        width: 170px;
-                        transform: scale(1) rotate(14deg);
-                        left: 14px;
-                        top: 85px;
-                    }
+                @include MQ(S) {
+                    height: 120px;
+                    width: 170px;
+                    transform: scale(1) rotate(14deg);
+                }
 
                 @include MQ(M) {
-                    transform: scale(1.2) rotate(14deg);
-                    left: 40px;
-                    top: 105px;
+                transform: scale(1.2) rotate(14deg);
                 }
-        }
+            }
 
-        @include MQ(M) {
-            height: 128px;
-        }
+            @include MQ(M) {
+                height: 128px;
+            }
     }
 }
 
-#zen-preamble {
-    h3 {
-        padding-bottom: 40px;
-        position: absolute;
-        left: 158px;
-        top: 215px;
-        transform: rotate(15deg) scale(0.35);
-        filter: drop-shadow(8px 8px 10px #885b1d);
-        transition: 0.8s all;
+#zen-preamble, #zen-explanation, #zen-participation, #zen-benefits, #zen-requirements{
+margin-left: 150px;
+h3 {
+    padding-bottom: 40px;
+    transform: rotate(15deg) scale(0.5);
+    filter: drop-shadow(8px 8px 10px #885b1d);
+    transition: 0.8s all;
 
-        @include MQ(S) {
-            font-size: 2em;
-            height: 140px;
-            width: 170px;
-            transform: scale(0.8) rotate(14deg);
-            left: 230px;
-            top: 410px;
-        }
+    @include MQ(S) {
+        font-size: 2em;
+        height: 140px;
+        width: 170px;
+        transform: scale(0.8) rotate(14deg);
+    }
 
-        @include MQ(M) {
-            transform: scale(1) rotate(14deg);
-            left: 250px;
-            top: 520px;
-        }
+    @include MQ(M) {
+        transform: scale(1) rotate(14deg);
     }
 }
-
-#zen-explanation {
-    h3 {
-        padding-bottom: 40px;
-        position: absolute;
-        left: 158px;
-        top: 520px;
-        transform: rotate(15deg) scale(0.35);
-        filter: drop-shadow(8px 8px 10px #885b1d);
-        transition: 0.8s all;
-
-        @include MQ(S) {
-            font-size: 2em;
-            height: 140px;
-            width: 170px;
-            transform: scale(0.8) rotate(14deg);
-            left: 230px;
-            top: 860px;
-        }
-
-        @include MQ(M) {
-            transform: scale(1) rotate(14deg);
-            left: 250px;
-            top: 950px;
-        }
-    }
-}
-
-#zen-participation {
-     h3 {
-        padding-bottom: 40px;
-        position: absolute;
-        left: 158px;
-        top: 930px;
-        transform: rotate(15deg) scale(0.32);
-        filter: drop-shadow(8px 8px 10px #885b1d);
-        transition: 0.8s all;
-
-        @include MQ(S) {
-            font-size: 2em;
-            height: 140px;
-            width: 170px;
-            transform: scale(0.6) rotate(14deg);
-            left: 210px;
-            top: 1245px;
-        }
-
-        @include MQ(M) {
-            transform: scale(1) rotate(14deg);
-            left: 500px;
-            top: 1245px;
-        }
-    }
-}
-
-#zen-benefits {
-    h3 {
-        padding-bottom: 40px;
-        position: absolute;
-        left: 158px;
-        top: 1370px;
-        transform: rotate(15deg) scale(0.32);
-        filter: drop-shadow(8px 8px 10px #885b1d);
-        transition: 0.8s all;
-
-        @include MQ(S) {
-            font-size: 2em;
-            height: 140px;
-            width: 170px;
-            transform: scale(0.6) rotate(14deg);
-            left: 190px;
-            top: 1670px;
-        }
-
-        @include MQ(M) {
-            transform: scale(1) rotate(14deg);
-            left: 260px;
-            top: 1470px;
-        }
-    }
-}
-
-#zen-requirements {
-    h3 {
-        padding-bottom: 40px;
-        position: absolute;
-        left: 158px;
-        top: 1610px;
-        transform: rotate(15deg) scale(0.32);
-        filter: drop-shadow(8px 8px 10px #885b1d);
-        transition: 0.8s all;
-
-        @include MQ(S) {
-            font-size: 2em;
-            height: 140px;
-            width: 170px;
-            transform: scale(0.6) rotate(14deg);
-            left: 190px;
-            top: 1890px;
-        }
-
-        @include MQ(M) {
-            transform: scale(1) rotate(14deg);
-            left: 260px;
-            top: 1870px;
-        }
-    }
 }
